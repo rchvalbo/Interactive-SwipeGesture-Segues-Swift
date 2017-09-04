@@ -20,5 +20,15 @@ Interactive Swipe Gesture class that will recognize any user swipe and determine
 * After you have created a file for the class in your project, you will need to add this line to the top of the view controller that will be implementing the class:
 
     ```swift
-    swipeInteractionController.wireToViewController(viewController: self, segueUp: "showSignUp", segueDown: "showLogin", segueLeft: nil, segueRight: nil)
+    let swipeInteractionController = SwipeInteractionController()
     ```
+    * This will initialize the class for use in your ViewController.
+
+* Now we will want to set up the class for use in your **viewDidLoad** like so:
+
+	```swift
+	swipeInteractionController.wireToViewController(viewController: self, segueUp: "showSignUp", segueDown: "showLogin", segueLeft: nil, segueRight: nil)
+	```
+	* My implementation has a value for **segueUp** and **segueDown** but you will fill the parameters that you need.
+
+
