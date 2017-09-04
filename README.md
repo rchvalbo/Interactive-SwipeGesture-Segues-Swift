@@ -15,9 +15,10 @@ Interactive Swipe Gesture class that will recognize any user swipe and determine
 
    * It will then execute the segue that you have included as a parameter in the **wireToViewController** function.
 
+## Integrate into Your Project
 
+* After you have created a file for the class in your project, you will need to add this line to the top of the view controller that will be implementing the class:
 
-
-```swift
- swipeInteractionController.wireToViewController(viewController: self, segueUp: "showSignUp", segueDown: "showLogin", segueLeft: nil, segueRight: nil)
+    > ```swift
+swipeInteractionController.wireToViewController(viewController: self, segueUp: "showSignUp", segueDown: "showLogin", segueLeft: nil, segueRight: nil)
 ```
