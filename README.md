@@ -44,6 +44,18 @@ Interactive Swipe Gesture class that will recognize any user swipe and determine
         return swipeInteractionController.interactionInProgress ? swipeInteractionController : nil
     }
     ```
+* If you're on the right track, you should already have an extension to the viewController with the following functions in it:
+
+	```swift
+	func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+            return transition
+        
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
+    ```
 
 
 
