@@ -9,16 +9,14 @@ Interactive Swipe Gesture class that will recognize any user swipe and determine
 1. In order to undersand the funtionality of this class, you should download this working project and mess around with it. 
 2. Read through the class **SwipeInteractionController** and take note of all the comments.
 
-## 2
+## Class Capabilities
+
+This class will determine the axis that the swipe gesture is fired as well as the direction on that axis.
+...* It will then execute the segue that you have included as a parameter in the **wireToViewController** function.
+
+
 
 
 ```swift
  swipeInteractionController.wireToViewController(viewController: self, segueUp: "showSignUp", segueDown: "showLogin", segueLeft: nil, segueRight: nil)
 ```
-
-
-
-![ScreenShot](addToViewDidLoad.png)
-
-
-![ScreenShot](Initialization.png)
