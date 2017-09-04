@@ -12,6 +12,7 @@ Interactive Swipe Gesture class that will recognize any user swipe and determine
 ## Class Capabilities
 
 *This class will determine the axis that the swipe gesture is fired as well as the direction on that axis.
+
 ...It will then execute the segue that you have included as a parameter in the **wireToViewController** function.
 
 
