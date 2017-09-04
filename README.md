@@ -56,7 +56,7 @@ Interactive Swipe Gesture class that will recognize any user swipe and determine
         return transition
     }
     ```
-
+* That's it! Once you have included the functions in the extension, you should have a functional swipe interaction that executes your transitions based on the users gestures.
 
 
 
