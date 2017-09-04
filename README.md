@@ -29,6 +29,12 @@ Interactive Swipe Gesture class that will recognize any user swipe and determine
 	```swift
 	swipeInteractionController.wireToViewController(viewController: self, segueUp: "showSignUp", segueDown: "showLogin", segueLeft: nil, segueRight: nil)
 	```
-	* My implementation has a value for **segueUp** and **segueDown** but you will fill the parameters that you need.
+	* My implementation has a value for **segueUp** and **segueDown** but you will fill the parameters that you need. These values will be the identifiers of the segues you will want to utilize for the gestures.
+
+## Extension in Your ViewController
+
+
+
+
 
 
