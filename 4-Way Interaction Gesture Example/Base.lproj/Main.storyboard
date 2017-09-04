@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Up View Controller-->
+        <scene sceneID="fov-h1-lPH">
+            <objects>
+                <viewController id="WXH-at-mxp" customClass="UpViewController" customModule="__Way_Interaction_Gesture_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KTf-mi-Q1P"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Q3-55-IHc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TIG-zx-bUc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="E8A-Df-1Ht"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEB-vY-0eK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-617"/>
+        </scene>
+        <!--Left View Controller-->
+        <scene sceneID="3Zr-hH-Wbg">
+            <objects>
+                <viewController id="6aT-hA-Sop" customClass="LeftViewController" customModule="__Way_Interaction_Gesture_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="udc-uc-vBn"/>
+                        <viewControllerLayoutGuide type="bottom" id="hrG-Rl-qtD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PQz-PT-McH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="eq4-OQ-Lq5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLQ-SQ-boY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-806" y="99"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__Way_Interaction_Gesture_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="u9z-lV-hNd" kind="show" identifier="toRight" id="c23-mK-III"/>
+                        <segue destination="6aT-hA-Sop" kind="show" identifier="toLeft" id="j7V-74-XAK"/>
+                        <segue destination="WXH-at-mxp" kind="show" identifier="toUp" id="FDO-CU-L7Q"/>
+                        <segue destination="mZO-kS-hO6" kind="show" identifier="toDown" id="32o-st-wqg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="99"/>
+        </scene>
+        <!--Down View Controller-->
+        <scene sceneID="Qas-EV-MJr">
+            <objects>
+                <viewController id="mZO-kS-hO6" customClass="DownViewController" customModule="__Way_Interaction_Gesture_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5ms-uO-4ef"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ta3-ca-FJe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zc4-ea-3W6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="e5Z-o1-300"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wp8-ec-tMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="863"/>
+        </scene>
+        <!--Right View Controller-->
+        <scene sceneID="VZB-KB-lUR">
+            <objects>
+                <viewController id="u9z-lV-hNd" customClass="RightViewController" customModule="__Way_Interaction_Gesture_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P7G-7u-NJR"/>
+                        <viewControllerLayoutGuide type="bottom" id="cb0-Eu-8X3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tRQ-OK-x9f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="Xqy-KH-Qbe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61z-oS-a0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="99"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="E8A-Df-1Ht"/>
+    </inferredMetricsTieBreakers>
+</document>
