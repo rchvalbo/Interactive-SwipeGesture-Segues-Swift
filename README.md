@@ -56,6 +56,8 @@ Interactive Swipe Gesture class that will recognize any user swipe and determine
         return transition
     }
     ```
+* If you do not have these two functions implemented, [Take a look at this repo to get started with animated transitions](https://github.com/rchvalbo/Swift-Controller-Transitions)    
+    
 * That's it! Once you have included the functions in the extension, you should have a functional swipe interaction that executes your transitions based on the users gestures.
 
 
